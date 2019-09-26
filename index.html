@@ -29,7 +29,9 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    will-change: left , background-color ;
 }
+
 
 .cloud1 {
 
@@ -40,6 +42,7 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    will-change: left , width;
 }
 
 .cloud2 {
@@ -51,6 +54,7 @@ animation-name: nube2;
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    will-change: left;
 }
 
 .cloud3 {
@@ -62,6 +66,7 @@ animation-name: nube3;
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    will-change: left;
 }
 
 .cloud4 {
@@ -73,6 +78,7 @@ animation-name: nube4;
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    will-change: left;
 }
 
 .cloud5 {
@@ -84,6 +90,7 @@ animation-name: nube5;
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    will-change: left;
 }
 
 
@@ -101,6 +108,7 @@ animation-name: pajaro, rebota;
     animation-direction: normal, alternate;
  /* animation-delay: 1s, 1s; */
  animation-timing-function: linear, ease-in-out;
+ will-change: left , transform;
 
 }
 
@@ -117,6 +125,7 @@ left: 1px;
     animation-direction:normal, alternate;
     animation-delay: 5s;
     animation-timing-function: linear, ease-in-out; */
+    will-change: left , transform;
 
 }
 
@@ -144,11 +153,12 @@ animation-play-state: paused;
 .car {
 
     position: absolute;
-bottom: -60px;
+bottom: -80px;
 left: 860px;
 animation-name: carro;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    will-change: left;
 
 }
 
@@ -156,33 +166,37 @@ animation-name: carro;
 .car1 {
 
 position: absolute;
-bottom: 20px;
+bottom: -20px;
 left: 140px;
 animation-name: carro1;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    will-change: left;
 
 }
 
 .car2 {
 
 position: absolute;
-bottom: 20px;
+bottom: -20px;
 left: 400px;
 animation-name: carro2;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    will-change: left;
 
 }
 
 .car3 {
 
 position: absolute;
-bottom: -60px;
+bottom: -80px;
 left: 600px;
 animation-name: carro3;
     animation-duration: 7s;
     animation-iteration-count: infinite;
+    will-change: left;
+   
 
 }
 
@@ -195,7 +209,12 @@ animation-name: carro3;
 
     to {
 
+        background-color: white;
+
         left: 30%;
+
+        
+        
 
     }
 
@@ -212,6 +231,7 @@ from {
 to {
 
     left: 40%;
+    width: 250px;
 
 }
 
@@ -290,9 +310,12 @@ from {
 
 }
 
+
+
 to {
 
     left: 0%;
+    
 
 }
  
@@ -407,13 +430,41 @@ to {
 }
 
 
+.containerTitle {
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    will-change: font-size;
+    
+}
+
+.containerTitle:hover .titulo {
+
+    font-size: 40px;
+}
+
+.containerTitle:hover .titulo1 {
+
+ font-size: 80px;
+}
+
+
+ 
  
  
 
     </style>
 </head>
 <body>
+<div class="containerTitle">
+
+        <h2 class="titulo">welcome to</h2>
+        <h1 class="titulo1">Animation City</h1>
+</div>
+ 
 
 <figure>
     <img src="./images/51838.jpg" alt="" class="city">      
